@@ -1,0 +1,50 @@
+header {
+   @include backsize(100%, 4.5vw, $clr1);
+
+   .header_container {
+      margin: 0 auto;
+      @include size(70%, 100%);
+      @include flex(flex-start, center);
+
+      nav {
+         ul {
+            @include flex(flex-start, center);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+               text-decoration: none;
+               @include text(1.2vw, 500, $сlr6);
+               margin-right: 3vw;
+
+               li {
+                  @include text(1.2vw, 500, $сlr6);
+                  cursor: pointer;
+                  transition: color .2s ease-in;
+               }
+
+               li:last-child {
+                  margin-right: 0
+               }
+
+               li:hover {
+                  color: $сlr4;
+               }
+            }
+         }
+      }
+   }
+}
+
+.zamena_header {
+   @include backsize(100%, 4.5vw, $clr1);
+}
+
+header.fixed {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   transition: position 1s ease-in;
+}

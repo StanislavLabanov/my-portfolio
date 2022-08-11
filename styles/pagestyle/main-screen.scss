@@ -1,0 +1,55 @@
+.main_img {
+   position: relative;
+   @include size(100%, 100vh);
+   overflow: hidden;
+
+   .main_img_img {
+      position: absolute;
+      background: url("../../public/main_img.png") center no-repeat;
+      background-size: cover;
+      @include size(100%, 100vh);
+      z-index: 0;
+
+      .main_img_text {
+         position: absolute;
+         top: 10vh;
+         left: 33%;
+         z-index: 10;
+
+         h1 {
+            text-align: center;
+            @include text(2.5vw, 300, $сlr6);
+            line-height: 4vw;
+
+            span {
+               font-size: 3.5vw;
+               font-weight: 500;
+               color: $сlr4;
+            }
+         }
+
+         .main_img_text_btn {
+            text-align: center;
+            color: $сlr6;
+            @include text(1.1vw, 400, $сlr6);
+
+            span {
+               color: $сlr4;
+               cursor: pointer;
+               font-size: 1.3vw;
+            }
+         }
+      }
+   }
+
+   .main_img_img::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 3;
+   }
+}

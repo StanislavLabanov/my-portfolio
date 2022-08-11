@@ -1,0 +1,108 @@
+footer {
+   position: relative;
+   @include backsize(100%, 11vw, $clr7);
+   margin: 0;
+   padding-top: 3vw;
+
+   .footer_container {
+      @include size(22%, 100%);
+      margin: 0 auto;
+
+      .messenges {
+         @include flex(space-between, center);
+         padding: 0;
+         margin: 0;
+
+         .icons {
+            @include size(1.6vw, 1.6vw);
+            color: $сlr6;
+            cursor: auto;
+            cursor: pointer;
+         }
+
+
+         a {
+            border-radius: 1vw;
+            display: inline-block;
+
+            div {
+               background-color: $сlr4;
+               cursor: pointer;
+               padding: .7vw;
+               border-radius: 1vw;
+               transition: transform .2s ease-in;
+            }
+
+            div:hover {
+               transform: scale(1.1);
+            }
+         }
+      }
+
+      .footer_container_text {
+         margin-top: 2vw;
+         text-align: center;
+         @include text(.75vw, 400, $сlr6)
+      }
+   }
+
+   .footer_up_click {
+      position: absolute;
+      top: -15%;
+      right: 10%;
+      @include backsize(4vw, 4vw, $clr2);
+      @include flex(center, center);
+      cursor: pointer;
+      transition: background-color .2s ease-in;
+
+      .btn_up {
+         color: $сlr6;
+         @include size(4vw, 4vw);
+      }
+   }
+
+   .footer_up_click:hover {
+      background-color: $сlr4;
+   }
+
+   .footer_up_click:hover::after,
+   .footer_up_click:hover::before {
+      content: none;
+      cursor: auto;
+   }
+
+   .footer_up_click::after,
+   .footer_up_click::before {
+      content: '';
+      position: absolute;
+      border: .12vw solid $clr2;
+      left: -1.04vw;
+      opacity: 0;
+      right: -1.04vw;
+      top: -1.04vw;
+      bottom: -1.04vw;
+      border-radius: 50%;
+      animation: pulse 1.7s linear infinite;
+      cursor: auto;
+   }
+
+   .footer_up_click::after {
+      animation-delay: .4s;
+   }
+
+   @keyframes pulse {
+      0% {
+         transform: scale(0.5);
+         opacity: 0;
+      }
+
+      50% {
+         opacity: 1;
+      }
+
+      100% {
+         transform: scale(1.2);
+         opacity: 0;
+      }
+   }
+}

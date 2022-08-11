@@ -1,0 +1,22 @@
+@mixin size($w, $h) {
+   width: $w;
+   height: $h;
+}
+
+@mixin text($s, $w, $color) {
+   font-size: $s;
+   font-weight: $w;
+   color: $color;
+}
+
+@mixin backsize($w, $h, $c) {
+   width: $w;
+   height: $h;
+   background-color: $c;
+}
+
+@mixin flex($j, $a) {
+   display: flex;
+   justify-content: $j;
+   align-items: $a;
+}

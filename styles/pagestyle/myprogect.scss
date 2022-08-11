@@ -1,0 +1,38 @@
+.progects {
+   padding-top: 3vw;
+
+   h1 {
+      text-align: center;
+      @include text(2vw, 700, $clr1);
+      padding: 0;
+      margin-bottom: 5vw;
+      text-transform: uppercase;
+   }
+
+   .progects_progect_block {
+      height: 30vw;
+      width: 100%;
+      margin: 0 auto;
+      border: .1vw solid $clr1;
+      margin-bottom: 1vw;
+
+      a {
+         text-decoration: none;
+
+         .progects_progect_block_text {
+            hyphens: auto;
+            opacity: 0;
+            @include text(1.5vw, 600, $сlr6);
+            line-height: 29.8vw;
+            text-align: center;
+            transition: .5s ease;
+         }
+      }
+   }
+
+   .progects_progect_block:hover .progects_progect_block_text {
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.9);
+      cursor: pointer;
+   }
+}

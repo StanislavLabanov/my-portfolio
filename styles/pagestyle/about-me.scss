@@ -1,0 +1,114 @@
+.about {
+   margin: 7vw 0;
+
+   h1 {
+      text-align: center;
+      @include text(2vw, 700, $clr1);
+      padding: 0;
+      margin-bottom: 5vw;
+      text-transform: uppercase;
+   }
+
+   .about_flex_block {
+      @include flex(space-between, flex-start);
+
+      .about_flex_block_about_me {
+
+         .about_flex_block_about_me_photo {
+            width: 20vw;
+            height: 15vw;
+            background: url('../../public/photo_2022-08-10_22-30-05.jpg') center;
+            margin: 0 0 2vw 3.5vw;
+            background-size: cover;
+         }
+
+         .about_flex_block_about_me_text {
+            text-align: center;
+            @include text(1vw, 400, $clr1);
+
+            span {
+               @include text(1vw, 600, $clr5);
+            }
+         }
+      }
+
+
+
+      .about_flex_block_progress_bar {
+         margin-left: 6vw;
+
+         ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+               position: relative;
+               @include backsize(35vw, 1.8vw, $сlr3);
+               margin-bottom: 1vw;
+               z-index: 1;
+
+               .progress_name {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 3;
+                  @include text(1vw, 600, $сlr6);
+                  @include backsize(25%, 100%, $clr5);
+                  @include flex(center, center);
+               }
+
+               .progress_bar {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: 2;
+                  height: 100%;
+                  background-color: $clr2;
+                  animation: progress-bar 5s;
+               }
+
+               .progress_bar_text {
+                  position: absolute;
+                  right: .6vw;
+                  top: 15%;
+                  z-index: 3;
+                  @include text(.9vw, 500, $clr1);
+               }
+
+               @keyframes progress-bar {
+                  0% {
+                     width: 0;
+                  }
+               }
+            }
+         }
+
+         .used_technology {
+            .used_technology_title {
+               margin: 3.5vw 0 1.5vw 0;
+               @include text(1.3vw, 700, $сlr4);
+               text-align: center;
+               text-transform: uppercase;
+            }
+
+            .used_technology_elements {
+               @include flex(space-between, center);
+
+               .used_technology_elements_circle_technology {
+                  img {
+                     @include size(4vw, 4vvw);
+                  }
+               }
+
+               .used_technology_elements_technology_block {
+                  img {
+                     @include size(10vw, 8vvw);
+                  }
+               }
+            }
+         }
+
+      }
+   }
+}
