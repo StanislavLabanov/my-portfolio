@@ -40,7 +40,7 @@ const MyProgects: NextPage = () => {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.3 }}
                   variants={LeftBlock} className='progects_progect_block' key={el.id} style={{ backgroundImage: `url(${el.photo})`, backgroundSize: 'cover' }}>
-                  <a href={el.url} target="_black"><div className='progects_progect_block_text'>{el.text}</div></a>
+                  <a href={el.url} target="_blank" rel="noopener noreferrer"><div className='progects_progect_block_text'>{el.text}</div></a>
                </motion.div>
             )
          }

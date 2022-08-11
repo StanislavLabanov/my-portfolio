@@ -19,10 +19,10 @@ const Footer: NextPage = () => {
          <div className='footer_container'>
             <div className='messenges'>
                <IconContext.Provider value={{ className: "icons" }}>
-                  <a href='https://www.instagram.com/_labanov_stasik/' target="_blank"><div><FaInstagram /></div></a>
-                  <a href='https://rabota.by/resume/5a05b94cff09ca34d10039ed1f38774f4f3871' target="_blank"><div><FaEnvelope /></div></a>
-                  <a href='https://vk.com/id147815273' target="_blank"><div><FaVk /></div></a>
-                  <a href='https://t.me/StasLabanov' target="_blank"><div><FaTelegram /></div></a>
+                  <a href='https://www.instagram.com/_labanov_stasik/' target="_blank" rel="noopener noreferrer"><div><FaInstagram /></div></a>
+                  <a href='https://rabota.by/resume/5a05b94cff09ca34d10039ed1f38774f4f3871' target="_blank" rel="noopener noreferrer"><div><FaEnvelope /></div></a>
+                  <a href='https://vk.com/id147815273' target="_blank" rel="noopener noreferrer"><div><FaVk /></div></a>
+                  <a href='https://t.me/StasLabanov' target="_blank" rel="noopener noreferrer"><div><FaTelegram /></div></a>
                </IconContext.Provider>
             </div>
             <div className='footer_container_text'>©Автор сайта frontend developer Лабанов Станислав </div>

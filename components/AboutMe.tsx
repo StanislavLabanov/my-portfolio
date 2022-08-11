@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import TextAnimations from '../model/textAnimat';
 import LeftBlock from '../model/LeftBlockAnimat';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const AboutMe: NextPage = () => {
    const [scroll, setScroll] = useState(false)
@@ -79,16 +80,16 @@ const AboutMe: NextPage = () => {
                      <div className='used_technology_title'>В разработке так же использую</div>
                      <div className='used_technology_elements'>
                         <div className='used_technology_elements_circle_technology'>
-                           <img src='/github.png' />
+                           <Image src='/github.png' alt='github' />
                         </div>
                         <div className='used_technology_elements_technology_block'>
-                           <img src='/webpack.png' />
+                           <Image src='/webpack.png' alt='webpack' />
                         </div>
                         <div className='used_technology_elements_circle_technology'>
-                           <img src='/bootstrap.png' />
+                           <Image src='/bootstrap.png' alt='bootstrap' />
                         </div>
                         <div className='used_technology_elements_technology_block'>
-                           <img src='/graphql.png' />
+                           <Image src='/graphql.png' alt='graphql' />
                         </div>
                      </div>
                   </div>
