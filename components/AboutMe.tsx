@@ -80,16 +80,16 @@ const AboutMe: NextPage = () => {
                      <div className='used_technology_title'>В разработке так же использую</div>
                      <div className='used_technology_elements'>
                         <div className='used_technology_elements_circle_technology'>
-                           <Image src='/github.png' alt='github' />
+                           <img src='/github.png' alt='github' />
                         </div>
                         <div className='used_technology_elements_technology_block'>
-                           <Image src='/webpack.png' alt='webpack' />
+                           <img src='/webpack.png' alt='webpack' />
                         </div>
                         <div className='used_technology_elements_circle_technology'>
-                           <Image src='/bootstrap.png' alt='bootstrap' />
+                           <img src='/bootstrap.png' alt='bootstrap' />
                         </div>
                         <div className='used_technology_elements_technology_block'>
-                           <Image src='/graphql.png' alt='graphql' />
+                           <img src='/graphql.png' alt='graphql' />
                         </div>
                      </div>
                   </div>
